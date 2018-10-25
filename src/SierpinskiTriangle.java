@@ -11,7 +11,7 @@ public class SierpinskiTriangle extends JFrame {
 	public static int WIDTH = 600;
 	public static int HEIGHT = 600;
 	public static int SPACING = 50;
-	public static int ITERATIONS = 3;
+	public static int ITERATIONS = 15;
 	
 	public SierpinskiTriangle() {
 		initGUI();
@@ -38,12 +38,12 @@ public class SierpinskiTriangle extends JFrame {
 	
 	public void drawSierpinski(int i, Graphics g, int x1, int y1, int x2, int y2, int x3, int y3) {
 		//base case
-		if (i == 0) return;
+		//if (i == 0) return;
 		
 		//general solution - draw a triangle
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setColor(Color.BLUE);
-		g2.setStroke(new BasicStroke(3));
+		g2.setStroke(new BasicStroke(1));
 		g2.drawLine(x1, y1, x2, y2);
 		g2.drawLine(x1, y1, x3, y3);
 		g2.drawLine(x2, y2, x3, y3);
@@ -51,6 +51,7 @@ public class SierpinskiTriangle extends JFrame {
 		i--;
 		
 		//reduced problem - draw smaller triangles
+		
 		
 		
 	}
